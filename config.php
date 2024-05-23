@@ -48,3 +48,7 @@ $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
 $THEME->haseditswitch = true;
+
+$THEME->scss = function($theme) {
+    return theme_ben_get_main_scss_content($theme);
+};
