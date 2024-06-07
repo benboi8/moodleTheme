@@ -1,3 +1,154 @@
-#page-content {
-  background-color: red;
+body {
+  color: white;
+}
+
+#page-wrapper {
+  background-color: $backcontent;
+}
+
+#page {
+  background-color: $backcontent;
+  color: white;
+}
+
+#page-header {
+  background-color: $maincontent;
+}
+
+#page-footer {
+  background-color: $maincontent;
+}
+
+#page.drawers .main-inner {
+  background-color: $maincontent;
+}
+
+.secondary-navigation .navigation {
+  background-color: $maincontent;
+  border-bottom-color: $primary;
+}
+
+.moremenu .nav-tabs {
+  background-color: $maincontent;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: $link-active;
+}
+
+a {
+  color: $link-inactive;
+}
+
+.moremenu .nav-link:hover, .moremenu .nav-link:focus {
+  color: $link-hover-color;
+  background-color: $backcontent;
+}
+
+div[role=main] {
+  background-color: $maincontent;
+}
+
+.card {
+  background-color: $maincontent-lighter;
+}
+
+.primary-navigation .navigation .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: $primary;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand {
+  color: white;
+}
+
+.navbar.fixed-top {
+  border-bottom-color: $primary;
+  background-color: $backcontent-darker !important;
+
+}
+
+.moremenu .nav-link.active:focus, .moremenu .nav-link.active:hover {
+  background-color: $backcontent;
+  border-bottom-color: $primary;
+}
+
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  color: $primary;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: $white-darker;
+}
+
+.navbar.fixed-top #usernavigation .nav-link {
+  color: white;
+}
+
+.navbar.fixed-top #usernavigation .nav-link:hover {
+  color: $white-darker;
+}
+
+#user-menu-toggle {
+  color: white;
+}
+
+.text-success {
+  color: #28b128 !important;
+}
+
+.drawerheader {
+  background-color: $maincontent;
+}
+
+.drawercontent {
+  background-color: $maincontent;
+}
+
+.icon-no-margin .icon {
+  color: white;
+}
+
+.bg-white {
+  background-color: $maincontent !important;
+}
+
+.block .block-cards .btn.btn-link.btn-icon {
+  color: $primary;
+}
+
+.block .block-cards .btn.btn-link.btn-icon:hover {
+  background-color: $backcontent;
+}
+
+.block .block-cards span.categoryname, .block .block-cards .btn-link {
+  color: $white-darker;
+}
+
+.block .block-cards .multiline {
+  color: white;
+}
+
+.btn-outline-secondary {
+  color: white;
+}
+
+.drawer-toggles .drawer-toggler .btn {
+  background-color: $maincontent-lighter;
+}
+
+#region-main {
+  background-color: $maincontent;
+}
+
+.alert-info {
+  background-color: $maincontent-lighter;
+  color: white;
+}
+
+.alert-dismissible .close {
+  color: white;
 }
