@@ -161,3 +161,7 @@ div[role=main] {
   background-color: $backcontent;
   background-image: linear-gradient(to right, $backcontent 0%, $backcontent-darker 100%);
 }
+
+.activity-item {
+  background-color: $maincontent;
+}
