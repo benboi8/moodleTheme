@@ -1,12 +1,15 @@
-$primary: #75f;
+$brand-primary: #75f !default;
+$primary: $brand-primary;
 $secondary: #555;
 
 $maincontent-lighter: #3f3f3f;
 $maincontent: #333;
 $backcontent: #222;
 $backcontent-darker: #121212;
-$link-active: #a5f;
+$link-active: lighten($brand-primary, 10%);
 $link-inactive: #ccc;
-$link-hover-color: $primary;
+$link-hover-color: darken($brand-primary, 10%);
 
 $white-darker: #cfcfcf;
+
+$text: white;

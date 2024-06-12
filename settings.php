@@ -12,35 +12,17 @@ if ($ADMIN->fulltree) {
     // Boost provides a nice setting page which splits settings onto separate tabs. We want to use it here.
     $settings = new theme_boost_admin_settingspage_tabs('themesettingben', get_string('configtitle', 'theme_ben'));
 
-    // Each page is a tab - the first is the "General" tab.
     $page = new admin_settingpage('theme_ben_general', get_string('generalsettings', 'theme_ben'));
 
-    // Variable $brand-color.
-    // We use an empty default value because the default colour should come from the preset.
-    $name = 'theme_ben/brandcolor';
-    $title = get_string('brandcolor', 'theme_ben');
-    $description = get_string('brandcolor_desc', 'theme_ben');
-    $setting = new admin_setting_configcolourpicker($name, $title, $description, '');
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
+    $colorpicker = new admin_setting_configcolourpicker(
+        'theme_ben/brandcolor',
+        get_string('brandcolor','theme_ben'),
+        get_string('brandcolor_desc', 'theme_ben'),
+        ''
+    );
 
-    // Must add the page after definiting all the settings!
-    $settings->add($page);
-
-    // Advanced settings.
-    $page = new admin_settingpage('theme_ben_advanced', get_string('advancedsettings', 'theme_ben'));
-
-    // Raw SCSS to include before the content.
-    $setting = new admin_setting_configtextarea('theme_ben/scsspre',
-        get_string('rawscsspre', 'theme_ben'), get_string('rawscsspre_desc', 'theme_ben'), '', PARAM_RAW);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
-
-    // Raw SCSS to include after the content.
-    $setting = new admin_setting_configtextarea('theme_ben/scss', get_string('rawscss', 'theme_ben'),
-        get_string('rawscss_desc', 'theme_ben'), '', PARAM_RAW);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $page->add($setting);
+    $colorpicker->set_updatedcallback('theme_purge_used_in_context_caches');
+    $page->add($colorpicker);
 
     $settings->add($page);
 }

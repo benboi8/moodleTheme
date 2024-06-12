@@ -8,7 +8,7 @@ body {
 
 #page {
   background-color: $backcontent;
-  color: white;
+  color: $text;
 }
 
 #page-header {
@@ -151,4 +151,13 @@ div[role=main] {
 
 .alert-dismissible .close {
   color: white;
+}
+
+.login-container {
+  background-color: $maincontent;
+}
+
+.pagelayout-login #page {
+  background-color: $backcontent;
+  background-image: linear-gradient(to right, $backcontent 0%, $backcontent-darker 100%);
 }
