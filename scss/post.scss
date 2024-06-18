@@ -109,7 +109,19 @@ div[role=main] {
 }
 
 .icon-no-margin .icon {
-  color: white;
+  color: $backcontent-darker;
+}
+
+.drawer-toggles .drawer-toggler .btn .icon {
+  color: $white;
+}
+
+.fa-question::before {
+  color: $white;
+}
+
+.fa-times-circle::before {
+  color: $white;
 }
 
 .bg-white {
@@ -164,4 +176,65 @@ div[role=main] {
 
 .activity-item {
   background-color: $maincontent;
+}
+
+.course-section .sectionname > a {
+  color: $text;
+}
+
+.path-mod .activity-header:not(:empty) {
+  background-color: $backcontent;
+}
+
+.generaltable tbody tr:nth-of-type(even) {
+  background-color: $maincontent;
+}
+
+.generaltable tbody {
+  background-color: $backcontent;
+}
+
+.generaltable {
+  color: $text;
+}
+
+.generaltable tbody tr:hover {
+  color: $text;
+}
+
+.generaltable th, .generaltable td {
+  border-color: $maincontent;
+}
+
+.btn {
+  color: $text;
+}
+
+.bg-light {
+  background-color: $maincontent-lighter !important;
+}
+
+.border {
+  border-color: $maincontent !important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background-color: $maincontent-lighter;
+}
+
+.dropdown-item {
+  color: $text;
+}
+
+.nav-tabs .dropdown-menu {
+  background-color: $backcontent;
+  color: $text;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  border-color: $primary;
+}
+
+.moremenu .dropdown-item[aria-current="true"], .moremenu .dropdown-item.active {
+  color: $primary;
 }
